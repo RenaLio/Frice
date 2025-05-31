@@ -16,7 +16,7 @@ export default defineConfig(({ command, mode }) => {
 	const env = loadEnv(mode, process.cwd(), "")
 	// console.log(env)
 	return {
-		base: "./",
+		base: "/",
 		server: {
 			port: env.VITE_PORT || 3005,
 			host: true,
