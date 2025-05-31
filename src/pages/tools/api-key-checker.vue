@@ -65,7 +65,7 @@ const pasteFromClipboard = async () => {
 	try {
 		const text = await navigator.clipboard.readText()
 		if (text) {
-			apiKeysText.value += (apiKeysText.value ? "\n" : "") + text
+			apiKeysText.value = text
 			ElNotification({
 				title: "提示",
 				message: "已从剪贴板粘贴内容",
@@ -185,7 +185,7 @@ const startCheck = async () => {
 
 		// 如果启用了本地存储，则保存结果
 		if (settingsStore.enableLocalStorage) {
-			localStorage.setItem("fal-api-keys-text", newValue)
+			localStorage.setItem("fal-api-keys-text", apiKeysText.value)
 			localStorage.setItem("fal-api-keys-results", JSON.stringify(results.value))
 		}
 
