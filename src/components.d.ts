@@ -8,35 +8,13 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    ElAside: typeof import('element-plus/es')['ElAside']
-    ElAvatar: typeof import('element-plus/es')['ElAvatar']
-    ElBreadcrumb: typeof import('element-plus/es')['ElBreadcrumb']
-    ElBreadcrumbItem: typeof import('element-plus/es')['ElBreadcrumbItem']
     ElButton: typeof import('element-plus/es')['ElButton']
-    ElCard: typeof import('element-plus/es')['ElCard']
     ElColorPicker: typeof import('element-plus/es')['ElColorPicker']
-    ElContainer: typeof import('element-plus/es')['ElContainer']
-    ElDialog: typeof import('element-plus/es')['ElDialog']
-    ElDropdown: typeof import('element-plus/es')['ElDropdown']
-    ElDropdownItem: typeof import('element-plus/es')['ElDropdownItem']
-    ElDropdownMenu: typeof import('element-plus/es')['ElDropdownMenu']
-    ElFooter: typeof import('element-plus/es')['ElFooter']
-    ElForm: typeof import('element-plus/es')['ElForm']
-    ElFormItem: typeof import('element-plus/es')['ElFormItem']
-    ElHeader: typeof import('element-plus/es')['ElHeader']
     ElIcon: typeof import('element-plus/es')['ElIcon']
-    ElInput: typeof import('element-plus/es')['ElInput']
-    ElInputNumber: typeof import('element-plus/es')['ElInputNumber']
-    ElMain: typeof import('element-plus/es')['ElMain']
-    ElMenu: typeof import('element-plus/es')['ElMenu']
-    ElMenuItem: typeof import('element-plus/es')['ElMenuItem']
-    ElOption: typeof import('element-plus/es')['ElOption']
     ElPagination: typeof import('element-plus/es')['ElPagination']
     ElProgress: typeof import('element-plus/es')['ElProgress']
     ElResult: typeof import('element-plus/es')['ElResult']
-    ElSelect: typeof import('element-plus/es')['ElSelect']
     ElSlider: typeof import('element-plus/es')['ElSlider']
-    ElSubMenu: typeof import('element-plus/es')['ElSubMenu']
     ElSwitch: typeof import('element-plus/es')['ElSwitch']
     ElTable: typeof import('element-plus/es')['ElTable']
     ElTableColumn: typeof import('element-plus/es')['ElTableColumn']
@@ -55,8 +33,5 @@ declare module 'vue' {
     RouterView: typeof import('vue-router')['RouterView']
     TheWelcome: typeof import('./components/TheWelcome.vue')['default']
     WelcomeItem: typeof import('./components/WelcomeItem.vue')['default']
-  }
-  export interface GlobalDirectives {
-    vLoading: typeof import('element-plus/es')['ElLoadingDirective']
   }
 }
